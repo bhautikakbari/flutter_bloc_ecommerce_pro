@@ -97,6 +97,49 @@ lib/
   </table>
 </div>
 
+## 📊 Architecture Diagrams
+
+### System Architecture
+<div align="center">
+  <img src="assets/diagrams/architecture_diagram.png" alt="System Architecture" width="800"/>
+</div>
+
+#### Architecture Overview
+- **UI Layer**: Handles all user interactions and display
+  - Views (ProductList, ProductDetail, Cart)
+  - Reusable Widgets
+  - Common Components
+- **Business Logic Layer**: Manages state and business rules
+  - BLoCs (Product, Cart)
+  - Events & States
+- **Data Layer**: Handles data operations
+  - Repositories
+  - Models
+  - Data Sources
+
+### Add to Cart Flow
+<div align="center">
+  <img src="assets/diagrams/add_to_cart_flow.png" alt="Add to Cart Flow" width="800"/>
+</div>
+
+#### Flow Description
+1. User taps "Add to Cart" button
+2. UI sends AddToCart event to CartBloc
+3. CartBloc processes event and updates state
+4. UI reflects changes to user
+5. Cart badge updates with new count
+
+### Cart State Machine
+<div align="center">
+  <img src="assets/diagrams/cart_state_machine.png" alt="Cart State Machine" width="800"/>
+</div>
+
+#### State Transitions
+- Empty → HasItems: Adding first product
+- HasItems → HasItems: Adding/updating products
+- HasItems → Empty: Removing last product
+- HasItems → CheckingOut: Starting checkout process
+
 
 ### Design Patterns
 
