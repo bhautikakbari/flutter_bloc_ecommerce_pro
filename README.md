@@ -50,3 +50,55 @@ This project aims to demonstrate:
 ## 🏗️ Architecture
 
 ### Project Structure
+
+lib/
+├── core/
+│   ├── constants/
+│   │   ├── app_colors.dart
+│   │   └── app_typography.dart
+│   └── widgets/
+│       ├── app_text.dart
+│       ├── app_button.dart
+│       ├── app_input.dart
+│       ├── app_card.dart
+│       └── quantity_selector.dart
+├── models/
+│   ├── product.dart
+│   └── cart_item.dart
+├── repositories/
+│   └── product_repository.dart
+├── blocs/
+│   ├── product/
+│   │   ├── product_bloc.dart
+│   │   ├── product_event.dart
+│   │   └── product_state.dart
+│   └── cart/
+│       ├── cart_bloc.dart
+│       ├── cart_event.dart
+│       └── cart_state.dart
+├── views/
+│   ├── product_list_view.dart
+│   ├── product_detail_view.dart
+│   └── cart_view.dart
+└── widgets/
+├── product_card.dart
+└── cart_item_card.dart
+
+
+### Design Patterns
+
+#### 1. BLoC Pattern
+- Separation of UI and business logic
+- Event-driven state management
+- Unidirectional data flow
+
+```dart
+// Example of BLoC implementation
+class CartBloc extends Bloc<CartEvent, CartState> {
+  CartBloc() : super(CartState()) {
+    on<AddToCart>(_onAddToCart);
+    on<RemoveFromCart>(_onRemoveFromCart);
+    on<UpdateCartItemQuantity>(_onUpdateCartItemQuantity);
+  }
+  // ... event handlers
+}
