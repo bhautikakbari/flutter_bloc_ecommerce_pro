@@ -1,3 +1,45 @@
+## 📱 Screenshots & Features Showcase
+
+### Product List View
+<div align="center">
+  <img src="https://v0.blob.com/product_list_demo.png" alt="Product List Demo" width="300"/>
+</div>
+
+<!-- Product List View Structure -->
+<div class="product-grid">
+  <div class="product-card">
+    <!-- Hero Animation Container -->
+    <div class="hero-image">
+      <img src="product1.jpg" alt="Product 1"/>
+    </div>
+    <div class="product-info">
+      <h3>Smartphone X</h3>
+      <p class="price">$999.99</p>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- Product Detail View (After Hero Animation) -->
+<div class="product-detail">
+  <div class="hero-image-detail">
+    <img src="product1.jpg" alt="Product 1"/>
+  </div>
+  <div class="product-info-detail">
+    <h2>Smartphone X</h2>
+    <p class="price">$999.99</p>
+    <p class="description">
+      Latest smartphone with amazing features
+    </p>
+    <div class="quantity-selector">
+      <button>-</button>
+      <span>1</span>
+      <button>+</button>
+    </div>
+  </div>
+</div>
+
+
 # Flutter BLoC E-commerce Pro 🛍️
 
 <div align="center">
