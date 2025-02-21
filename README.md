@@ -101,7 +101,7 @@ lib/
 
 ### System Architecture
 <div align="center">
-  <img src="assets/architecture_diagram.png" alt="System Architecture" width="800"/>
+  <img src="assets/diagrams/architecture_diagram.png" alt="System Architecture" width="800"/>
 </div>
 
 #### Architecture Overview
@@ -119,7 +119,7 @@ lib/
 
 ### Add to Cart Flow
 <div align="center">
-  <img src="assets/add_to_cart_flow.png" alt="Add to Cart Flow" width="800"/>
+  <img src="assets/diagrams/add_to_cart_flow.png" alt="Add to Cart Flow" width="800"/>
 </div>
 
 #### Flow Description
@@ -131,7 +131,7 @@ lib/
 
 ### Cart State Machine
 <div align="center">
-  <img src="assets/cart_state_machine.png" alt="Cart State Machine" width="800"/>
+  <img src="assets/diagrams/cart_state_machine.png" alt="Cart State Machine" width="800"/>
 </div>
 
 #### State Transitions
