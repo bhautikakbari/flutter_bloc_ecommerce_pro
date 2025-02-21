@@ -120,9 +120,10 @@ class CartBloc extends Bloc<CartEvent, CartState> {
 
 
 #### 2. Repository Pattern
-
+```dart
 abstract class IProductRepository {
   Future<List<Product>> getProducts();
   Future<List<Product>> getProductsByCategory(String category);
   Future<Product?> getProductById(int id);
 }
+```
