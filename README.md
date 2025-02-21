@@ -51,7 +51,7 @@ This project aims to demonstrate:
 
 ### Project Structure
 
-<div align="center">
+<div align="left">
   <table>
     <tr>
       <th>Project Structure</th>
@@ -92,19 +92,6 @@ lib/
 │   ├── product_card.dart
 │   └── cart_item_card.dart
 └── main.dart</pre>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div align="center">
-          <h4>Directory Overview:</h4>
-          <ul>
-            <li><strong>domain/</strong> - State management and data models</li>
-            <li><strong>providers/</strong> - Riverpod providers for state management</li>
-            <li><strong>presentation/</strong> - UI components and screens</li>
-            <li><strong>utils/</strong> - Utility classes and constants</li>
-          </ul>
-        </div>
       </td>
     </tr>
   </table>
