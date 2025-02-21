@@ -180,6 +180,82 @@ flutter format .
 flutter analyze
 ```
 
+```markdown
+## 🏗️ Architecture
+
+[Previous architecture content...]
+
+## 📊 Architecture Diagrams
+
+### System Architecture
+```mermaid
+graph TD
+    subgraph UI["UI Layer"]
+        V1["ProductListView"]
+        V2["ProductDetailView"]
+        V3["CartView"]
+        W1["ProductCard Widget"]
+        W2["CartItemCard Widget"]
+        CW["Common Widgets"]
+    end
+
+    subgraph BL["Business Logic Layer"]
+        B1["ProductBloc"]
+        B2["CartBloc"]
+        E1["Product Events"]
+        E2["Cart Events"]
+        S1["Product States"]
+        S2["Cart States"]
+    end
+
+    subgraph DL["Data Layer"]
+        R1["ProductRepository"]
+        DS["Data Source"]
+        M1["Product Model"]
+        M2["CartItem Model"]
+    end
+
+    %% UI Layer Connections
+    V1 --> W1
+    V1 --> B1
+    V2 --> B1
+    V3 --> W2
+    V3 --> B2
+    W1 --> B2
+    W2 --> B2
+
+    %% BLoC Layer Connections
+    B1 --> E1
+    B1 --> S1
+    B2 --> E2
+    B2 --> S2
+    
+    %% Repository Connections
+    B1 --> R1
+    R1 --> DS
+    R1 --> M1
+    B2 --> M2
+
+    %% Common Widgets
+    CW --> V1
+    CW --> V2
+    CW --> V3
+    CW --> W1
+    CW --> W2
+
+    classDef uiLayer fill:#e1bee7,stroke:#8e24aa,stroke-width:2px
+    classDef blocLayer fill:#bbdefb,stroke:#1976d2,stroke-width:2px
+    classDef dataLayer fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    classDef models fill:#ffecb3,stroke:#ffa000,stroke-width:2px
+
+    class V1,V2,V3,W1,W2,CW uiLayer
+    class B1,B2,E1,E2,S1,S2 blocLayer
+    class R1,DS dataLayer
+    class M1,M2 models
+```
+
+
+
 ## 👤 Author
 Bhautik Akbari
 
