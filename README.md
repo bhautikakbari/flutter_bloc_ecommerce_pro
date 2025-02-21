@@ -1,16 +1,52 @@
-# flutter_bloc_ecommerce_pro
+# Flutter BLoC E-commerce Pro 🛍️
 
-A new Flutter project.
+<div align="center">
 
-## Getting Started
+[![Flutter](https://img.shields.io/badge/Flutter-3.0+-02569B?logo=flutter)](https://flutter.dev/)
+[![Bloc](https://img.shields.io/badge/Bloc-8.1.3-blue?logo=blockit)](https://bloclibrary.dev/)
+[![Stars](https://img.shields.io/github/stars/yourusername/flutter_bloc_ecommerce_pro?style=social)](https://github.com/yourusername/flutter_bloc_ecommerce_pro/stargazers)
+[![Forks](https://img.shields.io/github/forks/yourusername/flutter_bloc_ecommerce_pro?style=social)](https://github.com/yourusername/flutter_bloc_ecommerce_pro/network/members)
 
-This project is a starting point for a Flutter application.
+A professional-grade Flutter e-commerce application demonstrating BLoC pattern implementation in large-scale projects. This project serves as a comprehensive example of implementing clean architecture, SOLID principles, and best practices in Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+[Getting Started](#getting-started) •
+[Features](#features) •
+[Architecture](#architecture) •
+[Screenshots](#screenshots) •
+[Contributing](#contributing)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+</div>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🎯 Project Goals
+
+This project aims to demonstrate:
+- Proper implementation of BLoC pattern without Cubit
+- Clean Architecture principles in a real-world application
+- SOLID principles in Flutter
+- Scalable state management for e-commerce features
+- Reusable widget patterns
+- Responsive design implementation
+
+## ✨ Features
+
+### Implemented
+- [x] Product listing with grid view
+- [x] Product details with Hero animation
+- [x] Shopping cart management
+- [x] Quantity controls
+- [x] Image caching
+- [x] Responsive design
+- [x] Common widgets
+- [x] Search functionality
+
+### Upcoming
+- [ ] User authentication
+- [ ] Checkout process
+- [ ] Order history
+- [ ] Wishlist
+- [ ] Product categories
+- [ ] Product reviews
+
+## 🏗️ Architecture
+
+### Project Structure
