@@ -105,6 +105,7 @@ lib/
 - Event-driven state management
 - Unidirectional data flow
 
+```dart
 // Example of BLoC implementation
 class CartBloc extends Bloc<CartEvent, CartState> {
   CartBloc() : super(CartState()) {
@@ -114,6 +115,8 @@ class CartBloc extends Bloc<CartEvent, CartState> {
   }
   // ... event handlers
 }
+
+```
 
 
 #### 2. Repository Pattern
